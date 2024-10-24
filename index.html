@@ -3,11 +3,128 @@
         <title> Evan Clay Kelly's Website</title>
         <!--this is a comment-->
         <!---this is where you export stuff!-->
+        <style>
+            /* this is a comment my guy, rip look at the flex box below */
+            body {
+                display: flex;
+				height: 100vh;
+				margin: 0;
+				/*comment out the margin and notice how ridiculous browsers are */
+            }
+			#name {
+				font-size: 16em;
+				color: green;
+				display: flex;
+				flex-direction: column;
+				grid-row-start: span 2;
+				/*please note that spanning rows affects how much vertical space something takes up. it is weird to consider*/
+			}
+			#name b {
+				color:greenyellow;
+			}
+			main {
+				flex-grow: 1;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				align-content: stretch;
+				grid-template-rows: 1fr 1fr;
+			}
+			main img {
+				width: 30em;
+				height: 50vh;
+				object-fit: cover;
+			}
+			main .profilepic {
+				display: flex;
+				justify-content: center;
+			}
+			
+        
+        </style>
     </head>
     <body>
-        <!---This is where you put all the content-->
-        <h1>
-        HELLO WORLD
-    	</h1>
+        <nav>
+            <!---This is the sidebar, fully working tm-->
+        	<ul>
+				<li>
+					<a href="https://www.eff.org/">home</a>
+				</li>
+				<li>
+					<a href="https://firstdue.com">work monies</a>
+				</li>
+				<li>
+					<a>music resume</a>
+				</li>
+				<li>
+					<a href="https://github.com/navebippzy">coding</a>
+				</li>
+				<li>
+					<a>Recommendations</a>
+				</li>
+				<li>
+					<a>Socials</a>
+				</li>
+			</ul>
+        </nav>
+        <main>
+        	<!---This is where you put all the content-->
+			<div id="name">
+				<span><b>E</b>van</span>
+				<span><b>C</b>lay</span>
+				<span><b>K</b>elly</span>
+			</div>
+			<div class="profilepic"><img src="openingyoureyesisforlosers.jpg"/></div>
+			<div>
+				I have eaten
+				the plums
+				that were in
+				the icebox
+				
+				and which
+				you were probably
+				saving
+				for breakfast
+				
+				Forgive me
+				they were delicious
+				so sweet
+				and so cold
+				
+				To be, or not to be, that is the question:
+				Whether 'tis nobler in the mind to suffer
+				The slings and arrows of outrageous fortune,
+				Or to take arms against a sea of troubles
+				And by opposing end them. To die—to sleep,
+				No more; and by a sleep to say we end
+				The heart-ache and the thousand natural shocks
+				That flesh is heir to: 'tis a consummation
+				Devoutly to be wish'd. To die, to sleep;
+				To sleep, perchance to dream—ay, there's the rub:
+				For in that sleep of death what dreams may come,
+				When we have shuffled off this mortal coil,
+				Must give us pause—there's the respect
+				That makes calamity of so long life.
+				For who would bear the whips and scorns of time,
+				Th'oppressor's wrong, the proud man's contumely,
+				The pangs of dispriz'd love, the law's delay,
+				The insolence of office, and the spurns
+				That patient merit of th'unworthy takes,
+				When he himself might his quietus make
+				With a bare bodkin? Who would fardels bear,
+				To grunt and sweat under a weary life,
+				But that the dread of something after death,
+				The undiscovere'd country, from whose bourn
+				No traveller returns, puzzles the will,
+				And makes us rather bear those ills we have
+				Than fly to others that we know not of?
+				Thus conscience doth make cowards of us all,
+				And thus the native hue of resolution
+				Is sicklied o'er with the pale cast of thought,
+				And enterprises of great pith and moment
+				With this regard their currents turn awry
+				And lose the name of action.
+				
+				</div>
+    	</main>
     </body>
 </html>
